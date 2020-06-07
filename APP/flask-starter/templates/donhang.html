@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Bootstrap core JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Shop Online</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css/heroic-features.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Shop Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="cart">
+              	<hr>
+              		<font color="white">Giỏ hàng của bạn</font>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=/#> <img src="/static/images/card.png"/></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">DCT </h1>
+        <p class="lead">Mọi thứ bạn cần đều ở đây! </p>
+        <a href="#" class="btn btn-primary btn-lg">Contact!</a>
+      </header>
+    </div>
+    <div class="container">
+
+		
+	
+      <div class="container"></div>
+      <table align="center">
+        <tr>
+          <td>
+            <h1>Thông tin khách hàng</h1>
+            <table>
+            <form action="." method="post">
+            
+            <tr>
+                <td>Họ</td>
+                        <td><input type="text" name="first_name" maxlength="50" required id="id_first_name" /></td>
+                </tr>
+                
+            <tr>
+                <td>Tên </td>
+                        <td><input type="text" name="last_name" maxlength="50" required id="id_last_name" /></td>
+                </tr>
+                
+            <tr>
+                <td>Email </td>
+                        <td><input type="email" name="email" maxlength="254" required id="id_email" /></td>
+                </tr>
+                
+            <tr>
+                <td>Số điện thoại </td>
+                        <td><input type="text" name="address" maxlength="250" required id="id_address" /></td>
+                </tr>
+                
+            <tr>
+                <td>Tên hàng </td>
+                        <td><input type="text" name="postal_code" maxlength="20" required id="id_postal_code" /></td>
+                </tr>
+                
+            <tr>
+                <td>Địa chỉ nhận </td>
+                        <td><input type="text" name="city" maxlength="100" required id="id_city" /></td>
+                </tr>
+                
+    
+                <tr><td colspan='2'>
+              <input type ="submit" value = "Đặt hàng" class="btn btn-primary" onclick="connect()">
+            </td></tr>
+          </form>
+              </table>
+            </td>
+        </tr>
+      </table>
+      </div>
+      
+      <script>
+        function connect() {
+          var username = document.getElementById('id_first_name').value;
+          var password = document.getElementById('id_last_name').value;
+          var email = document.getElementById('id_email').value;
+          var sodienthoai = document.getElementById('id_address').value;
+          var tenhang = document.getElementById('id_postal_code').value;
+          var diaachi = document.getElementById('id_city').value;
+          
+
+
+
+
+
+          if (username==''||password==''||email==''||sodienthoai==''||tenhang==''||diaachi=='') {
+            alert("Không được để trống ô nào, phải điền chính xác tất cả!!");
+          } else {
+            if (email.length<10) {
+              alert("email phải >=10 kí tự");
+            } else {
+                alert("Đặt hàng thành công!!");
+              }
+            }
+          }
+      </script>
+    
+    
+      </div>
+    
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+    
+
+    
+    </body>
+    </html>
